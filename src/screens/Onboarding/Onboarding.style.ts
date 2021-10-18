@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
     },
     logo: {
         alignSelf: 'center',
-        width: 30,
-        height: 60
+        width: 20,
+        height: 50
     },
     button: {
         width: theme.DEVICE_WIDTH * 0.70,
@@ -45,14 +45,19 @@ const styles = StyleSheet.create({
         position: 'absolute',
         bottom: 10
     },
-    getStartedTxt:{
+    getStartedTxt: {
         color: '#ffffff',
         fontSize: 18,
         fontWeight: 'bold'
     },
     arrowIcon: {
-        position:'absolute', 
+        position: 'absolute',
         right: 20
+    },
+    circleView: {
+        position: 'absolute',
+        width: theme.DEVICE_WIDTH * 0.18,
+        height: theme.DEVICE_WIDTH * 0.18
     }
 })
 

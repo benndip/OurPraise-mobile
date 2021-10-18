@@ -3,7 +3,7 @@ import { View, Text, FlatList, StatusBar, Image, Animated, Pressable } from 'rea
 import AntDesign from 'react-native-vector-icons/AntDesign'
 
 import styles from './Onboarding.style'
-import { OnboardingItem, Paginator } from '../../components'
+import { OnboardingItem, Paginator, CircularAnimation } from '../../components'
 
 const Onboarding: React.FC = () => {
 
@@ -86,6 +86,9 @@ const Onboarding: React.FC = () => {
                         source={require('../../../res/images/logo.png')}
                         style={styles.logo}
                     />
+                    <View style={styles.circleView}>
+                        <CircularAnimation percentage={(currentIndex + 1) * (100 / slides.length)} />
+                    </View>
                 </View>
             </View>
             <Paginator data={slides} scrollX={scrollX} />
